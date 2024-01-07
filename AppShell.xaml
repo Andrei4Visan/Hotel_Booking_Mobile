@@ -6,9 +6,20 @@
     xmlns:local="clr-namespace:Hotel_Booking_Mobile"
     Shell.FlyoutBehavior="Disabled">
 
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+    <TabBar>
+        <ShellContent
+    Title="Home"
+    ContentTemplate="{DataTemplate local:CameraPage}"
+    />
+        <ShellContent
+     Title="Camere"
+    ContentTemplate="{DataTemplate local:RezervarePage}"
+    />
+        <ShellContent
+         Title="Booking"
+        ContentTemplate="{DataTemplate local:RecenziiPage}"
+        />
+    </TabBar>
+
 
 </Shell>
